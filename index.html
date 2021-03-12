@@ -11,12 +11,13 @@
     <div class="container">
 
         <div class=" first row">
-            <input id="word" type="text" name="word">
 
-            <div class="intro">La parola da te inserita:</div>
+            <h2 class="intro">Vediamo se questa parola è un palindromo</h2>
+            <div id="palin"></div>
+            <input id="word" type="text" name="word">
             <input id="control" type="button" value="Verifica">
 
-            <div id="palin"></div>
+           
 
 
         </div>
@@ -26,13 +27,15 @@
         <div class=" second row">
 
             <div>
-                <span>Scegli pari o dispari:</span>
+                <h2>Pari o Dispari:</h2>
+                
+                    
+                <div class="choose">Scegli un numero:</div>
                 <select name="odd-pair" id="odd-pair">
                     <option value="1">Pari</option>
                     <option value="2">Dispari</option>
                 </select>
-                    
-                <span>Scegli un numero:</span>
+                
                 <select name="player-value" id="plvalue">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -42,7 +45,6 @@
                 </select>
             
            <input id="play" type="button" value="Gioca">
-
            <div id="number-game"></div>
             </div>
 

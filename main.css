@@ -5,29 +5,87 @@
 }
 
 .container{
+
     height: 100vh;
     background: linear-gradient(rgb(241, 234, 241), black);
 
 }
 
 .row{
+
     height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+
 }
 
 .first{
+
     background: linear-gradient(rgb(241, 234, 241), black);
- 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.row *{
+    margin-top: 2%;
 }
 
 .second{
+
     background: linear-gradient(blue, black);
- 
+    display: flex;
+    align-content: center;
+    color: white;
+    justify-content: center
 }
 
-.intro{
+h2{
     font-size: 30px;
+    font-weight: bold;
+
+}
+
+#word{
+    width: 20%;
+    height: 10%;
+    border-radius: 10px;
+    border:none;
+}
+
+#control, #play{
+    width: 10%;
+    font-size: 25px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border:none;
+    background-color: lightsalmon;
+
+}
+
+#play{
+    width: 50%;
+    margin-top: 30%;
+}
+
+#palin, #number-game{
+    min-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: maroon;
+}
+
+select{
+    height: 15%;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    
+   
+}
+
+.choose{
+    margin-bottom: 20px;
+    font-size: 20px;
     font-weight: bold;
 }

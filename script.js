@@ -30,8 +30,6 @@
     var playerValue = document.getElementById('plvalue').value;
     var oddOrPair = document.getElementById('odd-pair').value;
     var btnPlay = document.getElementById('play');
-    var showBotValue = 'Il tuo avversario ha scelto il num' + ' ' + botValue
-    
     
     btnPlay.addEventListener('click', function(){ 
         
@@ -48,19 +46,19 @@
                 if(playerValue = 1){
                     
                     if(sum % 2 == 0){
-                        gameResult.innerHTML = showBotValue + '<br>' + 'Hai vinto!!!'  
+                        gameResult.innerHTML = 'Il tuo avversario ha scelto' + ' ' +  botValue + '<br>' + 'Hai vinto!!!' 
                     }else{
-                        gameResult.innerHTML = showBotValue +  '<br>' + 'Peccato...Ritenta!' 
+                        gameResult.innerHTML = 'Il tuo avversario ha scelto' + ' ' +  botValue + '<br>' + 'Peccato...Ritenta!'
                     }
 
-                }else if(playerValue = 0){
+                }else{
                     
                     if(sum % 2 == 1){
-                        gameResult.innerHTML = showBotValue + '<br>' + 'Hai vinto!!!' 
+                        gameResult.innerHTML = 'Il tuo avversario ha scelto' + ' ' +  botValue + '<br>' + 'Hai vinto!!!' 
                     }else{
-                        gameResult.innerHTML = showBotValue + '<br>' + 'Peccato...Ritenta!' 
+                        gameResult.innerHTML = 'Il tuo avversario ha scelto' + ' ' +  botValue + '<br>' + 'Peccato...Ritenta!'
                     }
-
+                     
                 }
             }
       
