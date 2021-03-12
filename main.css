@@ -12,6 +12,9 @@
 
 .row{
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .first{
@@ -22,4 +25,9 @@
 .second{
     background: linear-gradient(blue, black);
  
+}
+
+#palin{
+    font-size: 30px;
+    font-weight: bold;
 }
