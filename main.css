@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background: linear-gradient(rgb(241, 234, 241), black);
+
+}
+
+.row{
+    height: 50%;
+}
+
+.first{
+    background: linear-gradient(rgb(241, 234, 241), black);
+ 
+}
+
+.second{
+    background: linear-gradient(blue, black);
+ 
+}
