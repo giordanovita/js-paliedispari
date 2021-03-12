@@ -1,23 +1,30 @@
-/* var palinResult = document.getElementById('palin');
+ var palinResult = document.getElementById('palin');
+ var btnControl = document.getElementById('control');
+ 
+ btnControl.addEventListener('click', function(){ 
+    palindrome()
+ })
 
-function palindrome(findPal){
+ function palindrome(){
+    var word = document.getElementById('word').value;
 
-    var removeChar = findPal.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+    var removeChar = word.replace(/[^A-Z0-9]/ig, "").toLowerCase();
     
     var checkPalindrome = removeChar.split('').reverse().join('');
     
         if(removeChar === checkPalindrome){
         
-        palinResult.innerHTML += " è un Palindromo "
+        palinResult.innerHTML = " è un Palindromo "
 
         }else{
-        palinResult.innerHTML += " non è un Palindromo "
+        palinResult.innerHTML = " non è un Palindromo "
 
         }
     }
-    palindrome(prompt('digita una parola per verificare se è un palindromo:' ));
- */
 
+
+
+    
     var gameResult = document.getElementById('number-game');
     var botValue = Math.floor(Math.random()*5)+1; 
     var playerValue = document.getElementById('plvalue').value;
