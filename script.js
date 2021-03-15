@@ -1,4 +1,4 @@
- var palinResult = document.getElementById('palin');
+var palinResult = document.getElementById('palin');
  var btnControl = document.getElementById('control');
  
  btnControl.addEventListener('click', function(){ 
@@ -43,7 +43,7 @@
 
                 var sum = botValue + playerValue;
                 
-                if(playerValue = 1){
+                if(oddOrPair == 0){
                     
                     if(sum % 2 == 0){
                         gameResult.innerHTML = 'Il tuo avversario ha scelto' + ' ' +  botValue + '<br>' + 'Hai vinto!!!' 
@@ -51,7 +51,7 @@
                         gameResult.innerHTML = 'Il tuo avversario ha scelto' + ' ' +  botValue + '<br>' + 'Peccato...Ritenta!'
                     }
 
-                }else{
+                }else if (oddOrPair == 1){
                     
                     if(sum % 2 == 1){
                         gameResult.innerHTML = 'Il tuo avversario ha scelto' + ' ' +  botValue + '<br>' + 'Hai vinto!!!' 
@@ -62,5 +62,3 @@
                 }
             }
       
-
-           
